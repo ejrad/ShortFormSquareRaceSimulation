@@ -76,22 +76,7 @@ No installation needed. Just open `index.html` in a modern browser (Chrome recom
 
 ## 🗺️ Customizing the Arena (`field.json`)
 
-All arena elements are configured in `src/field.json`. Swap it with any file from `fields/` or create your own.
-
-### Top-level keys
-
-| Key | Description |
-|---|---|
-| `arena` | Canvas width & height |
-| `racers` | Speed, size, physics props, colors, spawn points |
-| `walls` | Static wall specs (x, y, w, h) and color |
-| `breakableObstacles` | Blocks with a hit count before they break |
-| `enemies` | Dynamic bouncing enemy obstacles |
-| `colorBreakableBars` | Grid of bars each requiring a specific racer color to break |
-| `portal` | Entrance/exit teleporter pair |
-| `weapons` | Pickups — `"type": "sword"` or `"type": "monsterenergy"` |
-| `finishZone` | Checkered finish area position and size |
-| `closingWalls` | Walls that grow in over time, with delay and speed |
+All arena elements are configured in `src/field.json`. The `fields/` folder includes several example fields to get you started — swap one in or create your own from scratch.
 
 ---
 
