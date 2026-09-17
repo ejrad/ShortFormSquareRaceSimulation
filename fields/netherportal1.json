@@ -1,0 +1,97 @@
+{
+  "arena": {
+    "width": 1080,
+    "height": 1920
+  },
+
+  "racers": {
+    "speed": 8,
+    "size": 60,
+    "restitution": 1.0,
+    "friction": 0.0,
+    "density": 0.002,
+    "colors": [
+      { "name": "red",    "hex": "#ff2222" },
+      { "name": "green",  "hex": "#00cc44" },
+      { "name": "blue",   "hex": "#1155ff" },
+      { "name": "yellow", "hex": "#ffcc00" }
+    ],
+    "spawnPoints": [
+      { "x": 850, "y": 825 },
+      { "x": 925, "y": 825 },
+      { "x": 850, "y": 900 },
+      { "x": 925, "y": 900 }
+    ]
+  },
+
+  "walls": {
+    "color": "#24b96cff",
+    "specs": [
+      { "comment": "outer left",   "x": 30,   "y": 970,  "w": 60,   "h": 1920 },
+      { "comment": "outer right",  "x": 1050, "y": 970,  "w": 60,   "h": 1920 },
+      { "comment": "outer top",    "x": 540,  "y": 30,   "w": 1080, "h": 60   },
+      { "comment": "outer bottom", "x": 540,  "y": 1890, "w": 1080, "h": 60   },
+      { "x": 75,  "y": 640,  "w": 160, "h": 40  },
+      { "x": 675, "y": 640,  "w": 700, "h": 40  },
+      { "x": 980, "y": 1070, "w": 400, "h": 40  },
+      { "x": 430, "y": 1100, "w": 40,  "h": 900 },
+      { "x": 800, "y": 1500, "w": 40,  "h": 900 },
+      { "x": 685, "y": 425,  "w": 260, "h": 400 }
+    ]
+  },
+
+  "breakableObstacles": [
+    { "x": 437, "y": 340,  "w": 225, "h": 550, "hits": 25, "color": "#cca800" },
+    { "x": 235, "y": 1100, "w": 340, "h": 520, "hits": 67, "color": "#00b8c4" }
+  ],
+
+  "colorBreakableBars": {
+    "x": 615,
+    "barStartY": 1297,
+    "width": 320,
+    "barHeight": 22,
+    "count": 12,
+    "hits": 1,
+    "colorCycle": [
+      { "key": "red",    "hex": "#ff2222" },
+      { "key": "green",  "hex": "#00cc44" },
+      { "key": "blue",   "hex": "#1155ff" },
+      { "key": "yellow", "hex": "#ffcc00" }
+    ]
+  },
+
+  "portal": {
+    "entrance": { "x": 917, "y": 525  },
+    "exit":     { "x": 917, "y": 1175 },
+    "width": 80,
+    "height": 80,
+    "cooldownMs": 300
+  },
+
+  "finishZone": {
+    "x": 820,
+    "y": 1700,
+    "w": 200,
+    "h": 180,
+    "tileSize": 40
+  },
+
+  "closingWalls": [
+    {
+      "startX": 1080, "startY": 850,  "endX": 775, "endY": 960,
+      "thickness": 400, "delayMs": 1000,  "speed": 2,    "color": "#e53e3e"
+    },
+    {
+      "startX": 610,  "startY": 650,  "endX": 775, "endY": 1552,
+      "thickness": 400, "delayMs": 3500,  "speed": 1.75, "color": "#e53e3e"
+    },
+    {
+      "startX": 775,  "startY": 1700, "endX": 405, "endY": 1700,
+      "thickness": 400, "delayMs": 12250, "speed": 4,    "color": "#e53e3e"
+    },
+    {
+      "startX": 225,  "startY": 1920, "endX": 200, "endY": 615,
+      "thickness": 400, "delayMs": 12750, "speed": 1,    "color": "#e53e3e"
+    }
+  ]
+}

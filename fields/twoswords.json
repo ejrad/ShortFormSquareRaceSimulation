@@ -1,0 +1,207 @@
+{
+  "arena": {
+    "width": 1080,
+    "height": 1920
+  },
+  "racers": {
+    "speed": 8,
+    "size": 60,
+    "restitution": 1.0,
+    "friction": 0.0,
+    "density": 0.002,
+    "colors": [
+      {
+        "name": "red",
+        "hex": "#ff2222"
+      },
+      {
+        "name": "green",
+        "hex": "#00cc44"
+      },
+      {
+        "name": "blue",
+        "hex": "#1155ff"
+      },
+      {
+        "name": "yellow",
+        "hex": "#ffcc00"
+      }
+    ],
+    "spawnPoints": [
+      {
+        "x": 490,
+        "y": 1800
+      },
+      {
+        "x": 490,
+        "y": 1700
+      },
+      {
+        "x": 590,
+        "y": 1700
+      },
+      {
+        "x": 590,
+        "y": 1800
+      }
+    ]
+  },
+  "walls": {
+    "color": "#24b96cff",
+    "specs": [
+      {
+        "x": 30,
+        "y": 970,
+        "w": 60,
+        "h": 1920
+      },
+      {
+        "x": 1050,
+        "y": 970,
+        "w": 60,
+        "h": 1920
+      },
+      {
+        "x": 540,
+        "y": 30,
+        "w": 1080,
+        "h": 60
+      },
+      {
+        "comment": "END OF OUTER WALLS",
+        "x": 540,
+        "y": 1890,
+        "w": 1080,
+        "h": 60
+      },
+      {
+        "x": 200,
+        "y": 640,
+        "w": 400,
+        "h": 125
+      },
+      {
+        "x": 880,
+        "y": 640,
+        "w": 400,
+        "h": 125
+      },
+      {
+        "x": 880,
+        "y": 760,
+        "w": 305,
+        "h": 125
+      },
+      {
+        "x": 200,
+        "y": 760,
+        "w": 305,
+        "h": 125
+      },
+      {
+        "x": 912,
+        "y": 880,
+        "w": 270,
+        "h": 125
+      },
+      {
+        "x": 168,
+        "y": 880,
+        "w": 270,
+        "h": 125
+      }
+    ]
+  },
+  "breakableObstacles": [
+    {
+      "x": 540,
+      "y": 640,
+      "w": 267,
+      "h": 125,
+      "hits": 33,
+      "color": "#cca800"
+    },
+    {
+      "x": 540,
+      "y": 765,
+      "w": 367,
+      "h": 115,
+      "hits": 22,
+      "color": "#00b8c4"
+    },
+    {
+      "x": 540,
+      "y": 885,
+      "w": 464,
+      "h": 115,
+      "hits": 11,
+      "color": "#F26419"
+    }
+  ],
+  "colorBreakableBars": {
+    "x": 540,
+    "barStartY": 955,
+    "width": 950,
+    "barHeight": 22,
+    "count": 12,
+    "hits": 1,
+    "colorCycle": [
+      {
+        "key": "red",
+        "hex": "#ff2222"
+      },
+      {
+        "key": "green",
+        "hex": "#00cc44"
+      },
+      {
+        "key": "blue",
+        "hex": "#1155ff"
+      },
+      {
+        "key": "yellow",
+        "hex": "#ffcc00"
+      }
+    ]
+  },
+  "portal": {},
+  "finishZone": {
+    "x": 1,
+    "y": 2000,
+    "w": 1080,
+    "h": 180,
+    "tileSize": 31
+  },
+  "closingWalls": [
+    {
+      "startX": 540,
+      "startY": 1920,
+      "endX": 540,
+      "endY": 945,
+      "thickness": 1080,
+      "delayMs": 1000,
+      "speed": 0.5,
+      "color": "#e53e3e"
+    }
+  ],
+  "weapons": [
+    {
+      "type": "sword",
+      "x": 800,
+      "y": 300,
+      "width": 40,
+      "height": 120,
+      "imageSrc": "./src/sword.png",
+      "respawnDelayMs": 5000
+    },
+    {
+      "type": "sword",
+      "x": 280,
+      "y": 300,
+      "width": 40,
+      "height": 120,
+      "imageSrc": "./src/sword.png",
+      "respawnDelayMs": 5000
+    }
+  ]
+}
