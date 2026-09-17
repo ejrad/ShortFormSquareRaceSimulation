@@ -37,32 +37,6 @@ All libraries are either native browser APIs or loaded via CDN — **no build st
 
 ---
 
-## 📁 Project Structure
-
-```
-square-race/
-├── index.html              # Entry point
-├── style.css               # UI styles
-├── src/
-│   ├── main.js             # Game loop, rendering, recording logic
-│   ├── obstacles.js        # All obstacle classes + field parser
-│   ├── racers.js           # Racer spawning & movement
-│   ├── audio.js            # Web Audio melody engine
-│   ├── arena.js            # Canvas/arena setup
-│   ├── engine.js           # Matter.js engine initialization
-│   ├── config.js           # Shared config constants
-│   ├── instagram.js        # Social overlay rendering
-│   └── field.json          # Active arena layout
-├── fields/                 # Saved arena presets
-│   ├── netherportal1.json
-│   ├── trashcompactorsword.json
-│   ├── twoswords.json
-│   └── zogzagswords.json
-└── videos/                 # Example recorded outputs
-```
-
----
-
 ## 🚀 Getting Started
 
 No installation needed. Just open `index.html` in a modern browser (Chrome recommended for best `MediaRecorder` support).
